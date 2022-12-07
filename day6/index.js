@@ -50,6 +50,3 @@ const rows = getRowsFromData(data);
 solveFirst(rows);
 // ------------------
 solveSecond(rows);
-
-
-
