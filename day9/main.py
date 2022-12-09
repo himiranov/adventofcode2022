@@ -15,10 +15,7 @@ class Point:
         )
 
     def touch_point(self, point: 'Point') -> None:
-        if (
-            math.fabs(point.x - self.x) <= 1 and
-            math.fabs(point.y - self.y) <= 1
-        ):
+        if self.is_touched(point):
             return
 
         if point.x < self.x:
